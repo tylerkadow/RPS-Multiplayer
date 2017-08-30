@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+ 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+
+</head>
+<body>
+<h1>Rock Paper Scissors</h1>
+
+<form>
+	<input type="text" name="name" id="name" value="Name">
+	<input type="submit" value="Submit" id="submit" class="btn, btn-primary">
+</form>
+
+<div id="player1">
+	<p id="player1name">Waiting for Player 1</p>
+	<button id="rock1">Rock</button>
+	<button id="paper1">Paper</button>
+	<button id="scissors1">Scissors</button>
+	<p>Wins: 
+		<div id="wins1"></div>
+	</p>
+	<p>Losses: 
+		<div id="losses1"></div>
+	</p>
+</div>
+
+<div id="result">
+	<p id="results"></p>
+</div>
+
+<div id="player2">
+	<p id="player2name">Waiting for Player 2</p>
+	<button id="rock2">Rock</button>
+	<button id="paper2">Paper</button>
+	<button id="scissors2">Scissors</button>
+	<p>Wins: 
+		<div id="wins2"></div>
+	</p>
+	<p>Losses: 
+		<div id="losses2"></div>
+	</p>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
